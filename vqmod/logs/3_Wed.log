@@ -11,3 +11,16 @@ VQModObject::parseMods - Could not resolve path for [admin/model/sale/customer.p
 ----------------------------------------------------------------------
 
 
+---------- Date: 2017-12-27 23:59:20 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=extension/module&token=ucaSlXJItSBDjgKfQRHaZNe68EpgaIqd
+MOD DETAILS:
+   modFile   : C:\OpenServer\domains\dev5Test1\vqmod/xml/a_vqmod_d_social_login.xml
+   id        : d_social_login
+   version   : 2.x
+   vqmver    : 2.5.0
+   author    : dreamvention.com
+VQModObject::parseMods - Could not resolve path for [admin/model/sale/customer.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+

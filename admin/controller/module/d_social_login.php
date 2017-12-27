@@ -21,7 +21,7 @@ class ControllerModuleDSocialLogin extends Controller {
 		$this->load->language($this->route);
 		$this->load->model('setting/setting');
 		$this->load->model('design/layout');
-		$this->load->model('sale/customer_group');
+		$this->load->model('customer/customer_group');
 
 		//scripts
 		$this->document->addStyle('view/stylesheet/shopunity/bootstrap.css');
@@ -239,7 +239,7 @@ class ControllerModuleDSocialLogin extends Controller {
 		$data['config_files'] = $this->model_module_d_social_login->getConfigFiles($this->id);
 
 		//customer groups
-		$data['customer_groups'] = $this->model_sale_customer_group->getCustomerGroups();
+		$data['customer_groups'] = $this->model_customer_customer_group->getCustomerGroups();
 
 		//debug
 		$data['debug'] = $this->model_module_d_social_login->getFileContents(DIR_LOGS.$data['setting']['debug_file']);
