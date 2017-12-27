@@ -5,3 +5,5 @@
 /system/storage/logs
 /system/storage/cache
 /system/logs
+/.idea
+/github_update.php
