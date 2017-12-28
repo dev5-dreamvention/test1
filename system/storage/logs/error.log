@@ -40,3 +40,354 @@ Trace:
 #9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
 #10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
 #11 {main}
+2017-12-28 14:26:01 - PHP Notice:  Undefined index: token in C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-admin_controller_common_header.php on line 5
+2017-12-28 14:37:34 - PHP Warning:  Error while sending QUERY packet. PID=16176 in C:\OpenServer\domains\dev5Test1\system\library\db\mysqli.php on line 19
+2017-12-28 14:37:34 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM module WHERE module_id = '29' in C:\OpenServer\domains\dev5Test1\system\library\db\mysqli.php on line 41
+2017-12-28 14:37:34 - PHP Notice:  Trying to get property of non-object in C:\OpenServer\domains\dev5Test1\catalog\model\extension\module.php on line 6
+2017-12-28 14:37:34 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM layout_route WHERE 'common/home' LIKE route AND store_id = '0' ORDER BY route DESC LIMIT 1 in C:\OpenServer\domains\dev5Test1\system\library\db\mysqli.php on line 41
+2017-12-28 14:37:34 - PHP Notice:  Trying to get property of non-object in C:\OpenServer\domains\dev5Test1\catalog\model\design\layout.php on line 6
+2017-12-28 14:37:34 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM layout_module WHERE layout_id = '4' AND position = 'content_bottom' ORDER BY sort_order in C:\OpenServer\domains\dev5Test1\system\library\db\mysqli.php on line 41
+2017-12-28 14:37:34 - PHP Notice:  Trying to get property of non-object in C:\OpenServer\domains\dev5Test1\catalog\model\design\layout.php on line 16
+2017-12-28 14:37:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\dev5Test1\catalog\controller\common\content_bottom.php on line 48
+2017-12-28 14:37:34 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM information i LEFT JOIN information_description id ON (i.information_id = id.information_id) LEFT JOIN information_to_store i2s ON (i.information_id = i2s.information_id) WHERE id.language_id = '1' AND i2s.store_id = '0' AND i.status = '1' ORDER BY i.sort_order, LCASE(id.title) ASC in C:\OpenServer\domains\dev5Test1\system\library\db\mysqli.php on line 41
+2017-12-28 14:37:34 - PHP Notice:  Trying to get property of non-object in C:\OpenServer\domains\dev5Test1\catalog\model\catalog\information.php on line 12
+2017-12-28 14:37:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\dev5Test1\catalog\controller\common\footer.php on line 27
+2017-12-28 14:37:34 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM extension WHERE `type` = 'analytics' in C:\OpenServer\domains\dev5Test1\system\library\db\mysqli.php on line 41
+2017-12-28 14:37:34 - PHP Notice:  Trying to get property of non-object in C:\OpenServer\domains\dev5Test1\catalog\model\extension\extension.php on line 6
+2017-12-28 14:37:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\dev5Test1\catalog\controller\common\header.php on line 11
+2017-12-28 14:37:34 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM category c LEFT JOIN category_description cd ON (c.category_id = cd.category_id) LEFT JOIN category_to_store c2s ON (c.category_id = c2s.category_id) WHERE c.parent_id = '0' AND cd.language_id = '1' AND c2s.store_id = '0'  AND c.status = '1' ORDER BY c.sort_order, LCASE(cd.name) in C:\OpenServer\domains\dev5Test1\system\library\db\mysqli.php on line 41
+2017-12-28 14:37:34 - PHP Notice:  Trying to get property of non-object in C:\OpenServer\domains\dev5Test1\catalog\model\catalog\category.php on line 12
+2017-12-28 14:37:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\dev5Test1\catalog\controller\common\header.php on line 111
+2017-12-28 14:37:34 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM cart WHERE customer_id = '0' AND session_id = '28hmb6uavvitfmf20gruf1m987' in C:\OpenServer\domains\dev5Test1\system\library\db\mysqli.php on line 41
+2017-12-28 14:37:34 - PHP Notice:  Trying to get property of non-object in C:\OpenServer\domains\dev5Test1\system\library\cart.php on line 37
+2017-12-28 14:37:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\dev5Test1\system\library\cart.php on line 37
+2017-12-28 14:37:34 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM extension WHERE `type` = 'total' in C:\OpenServer\domains\dev5Test1\system\library\db\mysqli.php on line 41
+2017-12-28 14:37:34 - PHP Notice:  Trying to get property of non-object in C:\OpenServer\domains\dev5Test1\catalog\model\extension\extension.php on line 6
+2017-12-28 14:37:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\dev5Test1\catalog\controller\common\cart.php on line 19
+2017-12-28 14:37:34 - PHP Warning:  array_multisort(): Argument #3 is expected to be an array or a sort flag in C:\OpenServer\domains\dev5Test1\catalog\controller\common\cart.php on line 23
+2017-12-28 14:37:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\dev5Test1\catalog\controller\common\cart.php on line 25
+2017-12-28 14:37:34 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM cart WHERE customer_id = '0' AND session_id = '28hmb6uavvitfmf20gruf1m987' in C:\OpenServer\domains\dev5Test1\system\library\db\mysqli.php on line 41
+2017-12-28 14:37:34 - PHP Notice:  Trying to get property of non-object in C:\OpenServer\domains\dev5Test1\system\library\cart.php on line 37
+2017-12-28 14:37:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\dev5Test1\system\library\cart.php on line 37
+2017-12-28 14:37:34 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM cart WHERE customer_id = '0' AND session_id = '28hmb6uavvitfmf20gruf1m987' in C:\OpenServer\domains\dev5Test1\system\library\db\mysqli.php on line 41
+2017-12-28 14:37:34 - PHP Notice:  Trying to get property of non-object in C:\OpenServer\domains\dev5Test1\system\library\cart.php on line 37
+2017-12-28 14:37:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\dev5Test1\system\library\cart.php on line 37
+2017-12-28 14:41:04 - PHP Notice:  Undefined variable: d_social_login in C:\OpenServer\domains\dev5Test1\catalog\view\theme\default\template\common\header.tpl on line 45
+2017-12-28 14:54:46 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2017-12-28 15:03:24 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2017-12-28 15:10:08 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2017-12-28 15:13:18 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2017-12-28 15:14:32 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2017-12-28 15:14:36 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Facebook.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Facebook->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Facebook', Array, Array)
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Facebook', Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Facebook', NULL)
+#4 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Facebook')
+#5 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#6 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#7 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#9 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#10 {main}
+2017-12-28 15:14:37 - Missing provider application credentials.
+
+HybridAuth Error: Your application key and secret are required in order to connect to Twitter.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Twitter.php(18): Hybrid_Provider_Model_OAuth1->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Twitter->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Twitter', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Twitter', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Twitter', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Twitter')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2017-12-28 15:14:38 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2017-12-28 15:15:30 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2017-12-28 15:15:33 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2017-12-28 15:17:33 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2017-12-28 15:19:14 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2017-12-28 15:20:09 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Facebook.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Facebook->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Facebook', Array, Array)
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Facebook', Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Facebook', NULL)
+#4 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Facebook')
+#5 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#6 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#7 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#9 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#10 {main}
+2017-12-28 15:20:16 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Facebook.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Facebook->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Facebook', Array, Array)
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Facebook', Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Facebook', NULL)
+#4 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Facebook')
+#5 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#6 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#7 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#9 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#10 {main}
+2017-12-28 15:20:26 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2017-12-28 15:20:29 - Missing provider application credentials.
+
+HybridAuth Error: Your application key and secret are required in order to connect to Twitter.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Twitter.php(18): Hybrid_Provider_Model_OAuth1->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Twitter->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Twitter', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Twitter', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Twitter', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Twitter')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2017-12-28 15:20:33 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2017-12-28 15:36:04 - PHP Notice:  Undefined index: token in C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-admin_controller_common_header.php on line 5
+2017-12-28 15:40:27 - Authentication failed. The user has canceled the authentication or the provider refused the connection.
+
+HybridAuth Error: Authentication failed! Twitter returned an error. 
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(55): Hybrid_Auth::initialize(Array)
+#1 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(101): Hybrid_Auth->__construct(Array)
+#2 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#3 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#4 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#5 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#6 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#7 {main}
+2017-12-28 15:40:48 - Authentication failed. The user has canceled the authentication or the provider refused the connection.
+
+HybridAuth Error: Authentication failed! Twitter returned an error. 
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(55): Hybrid_Auth::initialize(Array)
+#1 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(101): Hybrid_Auth->__construct(Array)
+#2 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#3 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#4 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#5 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#6 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#7 {main}
+2017-12-28 15:47:34 - PHP Warning:  mysqli::query(): MySQL server has gone away in C:\OpenServer\domains\dev5Test1\system\library\db\mysqli.php on line 19
+2017-12-28 15:47:34 - PHP Warning:  mysqli::query(): Error reading result set's header in C:\OpenServer\domains\dev5Test1\system\library\db\mysqli.php on line 19
+2017-12-28 15:47:34 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM customer WHERE customer_id = '1' LIMIT 1 in C:\OpenServer\domains\dev5Test1\system\library\db\mysqli.php on line 41
+2017-12-28 15:47:34 - PHP Notice:  Trying to get property of non-object in C:\OpenServer\domains\dev5Test1\catalog\model\module\d_social_login.php on line 62
+2017-12-28 15:47:34 - PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\OpenServer\domains\dev5Test1\index.php:100) in C:\OpenServer\domains\dev5Test1\system\library\response.php on line 12

@@ -21,7 +21,7 @@
   border-radius: 3px;
   box-shadow: 0 1px 0 rgba(0,0,0,0.10);
   margin: 2px;
-  margin-bottom: 10px;
+  //margin-bottom: 10px;
   padding:0px;
 }
 #d_social_login  .dsl-button:hover{
@@ -108,7 +108,7 @@ a [class*="dsl-icon-"],
 
 #d_social_login .alert.alert-warning {
   position: absolute;
-  bottom: -140%;
+  transform:translateY(33%);
   margin-bottom: 0;
   z-index:20;
 }

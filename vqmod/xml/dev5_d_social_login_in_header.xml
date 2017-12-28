@@ -21,5 +21,11 @@
             <add><![CDATA[ <div class="pull-left"><?php echo $d_social_login; ?></div>]]></add>
         </operation>
     </file>
+    <file name="admin/model/customer/customer.php">
+        <operation >
+            <search position="after"><![CDATA[$this->db->query("DELETE FROM " . DB_PREFIX . "customer WHERE customer_id = '" . (int)$customer_id . "'");]]></search>
+            <add><![CDATA[$this->db->query("DELETE FROM " . DB_PREFIX . "customer_authentication WHERE customer_id = '" . (int)$customer_id . "'");]]></add>
+        </operation>
+    </file>
 
 </modification>
