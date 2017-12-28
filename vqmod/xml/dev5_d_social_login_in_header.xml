@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>d_social_login_in_header</id>
+    <version>2.x</version>
+    <vqmver required="true">2.5.0</vqmver>
+    <author>dev5.dreamvention.com</author>
+
+    <file name="catalog/controller/common/header.php">
+        <operation >
+            <search position="after"><![CDATA[	$data['title'] = $this->document->getTitle();]]></search>
+            <add><![CDATA[$d_social_login_code = "d_social_login";
+            if ($this->config->get($d_social_login_code . '_status'))
+            {
+             $data['d_social_login']= $this->load->controller('module/' . $d_social_login_code);
+            }]]></add>
+        </operation>
+    </file>
+    <file name="catalog/view/theme/default/template/common/header.tpl">
+        <operation >
+            <search position="after"><![CDATA[<?php echo $language; ?>]]></search>
+            <add><![CDATA[ <div class="pull-left"><?php echo $d_social_login; ?></div>]]></add>
+        </operation>
+    </file>
+
+</modification>
