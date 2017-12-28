@@ -1,0 +1,42 @@
+2017-12-28 0:00:13 - PHP Notice:  Error: Could not load model C:/OpenServer/domains/dev5Test1/admin/model/sale/customer_group.php! in C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_loader.php on line 63
+2017-12-28 0:04:07 - PHP Notice:  Error: Could not load model C:/OpenServer/domains/dev5Test1/admin/model/sale/customer_group.php! in C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_loader.php on line 63
+2017-12-28 0:59:22 - PHP Notice:  Undefined index: token in C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-admin_controller_common_header.php on line 5
+2017-12-28 0:59:25 - PHP Notice:  Undefined index: token in C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-admin_controller_common_header.php on line 5
+2017-12-28 0:59:26 - PHP Notice:  Undefined index: token in C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-admin_controller_common_header.php on line 5
+2017-12-28 0:59:27 - PHP Notice:  Undefined index: token in C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-admin_controller_common_header.php on line 5
+2017-12-28 0:59:28 - PHP Notice:  Undefined index: token in C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-admin_controller_common_header.php on line 5
+2017-12-28 0:59:47 - PHP Notice:  Undefined index: token in C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-admin_controller_common_header.php on line 5
+2017-12-28 1:00:14 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}
+2017-12-28 1:04:32 - Missing provider application credentials.
+
+HybridAuth Error: Your application key and secret are required in order to connect to Twitter.
+
+Trace:
+ #0 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Providers\Twitter.php(18): Hybrid_Provider_Model_OAuth1->initialize()
+#1 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Twitter->initialize()
+#2 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Twitter', Array, Array)
+#3 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Twitter', Array)
+#4 C:\OpenServer\domains\dev5Test1\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Twitter', NULL)
+#5 C:\OpenServer\domains\dev5Test1\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Twitter')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\OpenServer\domains\dev5Test1\vqmod\vqcache\vq2-system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\OpenServer\domains\dev5Test1\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\OpenServer\domains\dev5Test1\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\OpenServer\domains\dev5Test1\index.php(273): Front->dispatch(Object(Action), Object(Action))
+#11 {main}

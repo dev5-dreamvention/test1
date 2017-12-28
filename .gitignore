@@ -1,8 +1,6 @@
 /admin/config.php
 /config.php
 /image
-/system/storage/logs
-/system/storage/cache
 /system/logs
 /.idea
 /github_update.php
