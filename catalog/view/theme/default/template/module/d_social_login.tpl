@@ -102,10 +102,25 @@ a [class*="dsl-icon-"],
 .dsl-hide-icon{
   opacity: 0
 }
+#d_social_login {
+  position: relative;
+}
+
+#d_social_login .alert.alert-warning {
+  position: absolute;
+  bottom: -140%;
+  margin-bottom: 0;
+  z-index:20;
+}
+#d_social_login .alert.alert-warning button.close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
 </style>
 <div id="d_social_login">
   <?php if($error){ ?>
-  <div class="alert alert-warning"><?php echo $error; ?></div>
+  <div class="alert alert-warning"><?php echo $error; ?><button type="button" class="close" data-dismiss="alert">×</button></div>
   <?php } ?>
   <span class="dsl-label dsl-label-<?php echo $size; ?>"><?php echo $button_sign_in; ?></span>
   <?php foreach($providers as $key => $provider){ ?><?php if ($provider['enabled']) { ?><a id="dsl_<?php echo $provider['id']; ?>_button" class="dsl-button dsl-button-<?php echo $size; ?>" href="index.php?route=module/d_social_login/login&provider=<?php echo $key; ?>"><span class="l-side"><span class="dsl-icon <?php echo $provider['icon']; ?>"></span></span><span class="r-side"><?php echo $provider['heading']; ?></span></a><?php }  ?><?php } ?>
@@ -115,7 +130,7 @@ $( document ).ready(function() {
   $('.dsl-button').on('click', function(){
     $('.dsl-button').find('.l-side').spin(false);
     $(this).find('.l-side').spin('<?php echo $size; ?>', '#fff');
-    
+
     $('.dsl-button').find('.dsl-icon').removeClass('dsl-hide-icon');
     $(this).find('.dsl-icon').addClass('dsl-hide-icon');
   })
